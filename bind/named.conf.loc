@@ -1,0 +1,5 @@
+zone "ns.dieter-draelants.sb.uclllabs.be" {
+      type master;
+      file "/etc/bind/db.dieter-draelants.sb.uclllabs.be";
+      allow-transfer { 193.191.177.158; };
+};
