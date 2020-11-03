@@ -21,7 +21,7 @@
 #	|	`--  ports.conf
 #	|-- mods-enabled
 #	|	|-- *.load
-#	|	`-- *.conf
+	|	`-- *.conf
 #	|-- conf-enabled
 #	|	`-- *.conf
 # 	`-- sites-enabled
@@ -224,4 +224,7 @@ IncludeOptional conf-enabled/*.conf
 # Include the virtual host configurations:
 IncludeOptional sites-enabled/*.conf
 
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noe
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+
+LoadModule headers_module modules/mod_headers.so
