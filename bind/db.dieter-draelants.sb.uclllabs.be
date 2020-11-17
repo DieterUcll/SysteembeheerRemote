@@ -5,7 +5,7 @@ $ORIGIN dieter-draelants.sb.uclllabs.be.
 
 @	IN	CAA	1 issue "letsencrypt.org"
 @	IN	SOA	ns.dieter-draelants.sb.uclllabs.be. root.ns.dieter-draelants.sb.uclllabs.be. (
-			     25		; Serial
+			     26		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -18,7 +18,7 @@ $ORIGIN dieter-draelants.sb.uclllabs.be.
 	IN	NS	ns.dieter-draelants.sb.uclllabs.be.
 
 ; Mail Servers for this domain. 
-	IN	MX  10  dieter-draelants.sb.uclllabs.be.
+	IN	MX  10  mx.dieter-draelants.sb.uclllabs.be.
 
 
 
@@ -34,7 +34,7 @@ ns1	IN	A	193.191.177.254
 ns2	IN	A	193.191.177.4
 secure	IN	A	193.191.177.149
 supersecure	IN	A	193.191.177.149
-
+mx	IN	A	193.191.177.149
 
 ;@	IN	NS	localhost.
 
