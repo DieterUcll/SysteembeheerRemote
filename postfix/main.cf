@@ -11,11 +11,14 @@ append_dot_mydomain = no
 
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
-mydestination = $myhostname, localhost.$mydomain, localhost
+mydestination = dieter-draelants.localdomain, localhost.localdomain, localhost
 relayhost = 
-mynetworks = 127.0.0.0/8
-inet_interfaces = loopback-only
-recipient_delimiter = +
+mynetworks = 127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+inet_interfaces = all
+recipient_delimiter = 
 
 compatibility_level = 2
 
+myorigin = /etc/mailname
+mailbox_size_limit = 51200000
+inet_protocols = all
