@@ -11,7 +11,8 @@ append_dot_mydomain = no
 
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
-mydestination = dieter-draelants.localdomain, localhost.localdomain, localhost
+#mydestination = dieter-draelants.localdomain, localhost.localdomain, localhost
+mydestionation = localhost
 relayhost = 
 mynetworks = 127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
 inet_interfaces = all
@@ -22,3 +23,22 @@ compatibility_level = 2
 myorigin = /etc/mailname
 mailbox_size_limit = 51200000
 inet_protocols = all
+
+smtpd_tls_cert_file=/etc/letsencrypt/live/ns.dieter-draelants.sb.uclllabs.be/cert.pem
+smtpd_tls_key_file=/etc/letsencrypt/live/ns.dieter-draelants.sb.uclllabs.be/privkey.pem
+smtpd_use_tls=yes
+smtpd_tls_auth_only = yes
+
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_recipient_restrictions =
+permit_sasl_authenticated,
+permit_mynetworks,
+reject_unauth_destination
+
+## Tells Postfix to use Dovecot's LMTP instead of its own LDA to save emails to the local mailboxes.
+virtual_transport = lmtp:unix:private/dovecot-lmtp
+
+virtual_mailbox_domains = mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
+virtual_mailbox_maps = mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
