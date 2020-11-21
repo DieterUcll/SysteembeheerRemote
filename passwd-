@@ -33,4 +33,5 @@ dnsmasq:x:111:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
 bind:x:112:120::/var/cache/bind:/usr/sbin/nologin
 mysql:x:113:121:MySQL Server,,,:/nonexistent:/bin/false
 dovecot:x:114:122:Dovecot mail server,,,:/usr/lib/dovecot:/usr/sbin/nologin
-dovenull:x:115:123::/nonexistent:/usr/sbin/nologin
+dovenull:x:115:123:Dovecot login user,,,:/nonexistent:/usr/sbin/nologin
+stunnel4:x:116:124::/var/run/stunnel4:/usr/sbin/nologin

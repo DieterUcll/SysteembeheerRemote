@@ -20,6 +20,9 @@
 ### tuple ### allow tcp 587 0.0.0.0/0 any 0.0.0.0/0 in
 -A ufw-user-input -p tcp --dport 587 -j ACCEPT
 
+### tuple ### allow tcp 465 0.0.0.0/0 any 0.0.0.0/0 in
+-A ufw-user-input -p tcp --dport 465 -j ACCEPT
+
 ### END RULES ###
 
 ### LOGGING ###

@@ -6,7 +6,7 @@ adm:*::syslog
 tty:*::syslog
 disk:*::
 lp:*::
-mail:*::
+mail:*::dovecot
 news:*::
 uucp:*::
 man:*::
@@ -62,3 +62,4 @@ bind:!::
 mysql:!::
 dovecot:!::
 dovenull:!::
+stunnel4:!::
