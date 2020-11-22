@@ -1,0 +1,66 @@
+#!/bin/bash
+
+if  [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Not running as root"
+    exit
+fi
+
+zone=$1
+
+FILENAME='db.'"$zone"'.dieter-draelants.sb.uclllabs.be'
+FILE=/etc/bind/$FILENAME
+if test -f "$FILE"; then
+
+        echo 'Zone '"$1"' already exists'
+
+else
+
+echo 'Creating zone'
+#Add zone into named.conf.local
+input="/etc/bind/named.conf.local"
+echo 'zone "'"$zone"'.dieter-draelants.sb.uclllabs.be" {
+  type master;
+  file "/etc/bind/'"$FILENAME"'";
+  allow-transfer { 193.191.177.254; 193.191.177.4; 193.191.177.149; 193.191.177.158  };
+};
+' >> $input
+
+#Create db.$.dieter-draelants.sb.uclllabs.be file
+output=/etc/bind/$FILENAME
+echo 'Creating file: '"$FILENAME"
+echo '
+$TTL 300     ;86400
+$ORIGIN '"$zone"'.dieter-draelants.sb.uclllabs.be.
+@       IN      SOA    '"$zone"'.dieter-draelants.sb.uclllabs.be. root.'"$zone"'.dieter-draelants.sb.uclllabs.be. (
+                                10              ;Serial
+                                604800          ;Refresh
+                                86400           ;Retry
+                                2419200         ;Expire
+                                86400 )         ;Negative Cache TTL
+;Name servers
+@       IN      NS      ns.'"$zone"'.dieter-draelants.sb.uclllabs.be.
+@       IN      NS      ns.dieter-draelants.sb.uclllabs.be.
+;A records
+ns      IN       A      193.191.177.149
+@       IN       A      193.191.177.149
+' >> $output
+
+
+
+#update db.dieter-draelants.sb.uclllabs.be
+DBFILE=/etc/bind/db.dieter-draelants.sb.uclllabs.be
+echo "$zone"'      IN      NS      ns.dieter-draelants.sb.uclllabs.be.' >> $DBFILE
+
+#update serial in db.dieter-draelants.sb.uclllabs.be
+Serial=$(grep 'Serial' /etc/bind/db.dieter-draelants.sb.uclllabs.be)
+SerialNumber=$(echo $Serial | sed 's/[^0-9]*//g')
+((SerialNumber++))
+newSerial='                                '"$SerialNumber"'        ;Serial'
+sed -i "s/.*Serial.*/\t\t\t      $newSerial/g" /etc/bind/db.dieter-draelants.sb.uclllabs.be
+
+#Restart bind9 service
+echo 'Restarting bind9'
+systemctl restart bind9
+
+echo 'Finished'
+fi
