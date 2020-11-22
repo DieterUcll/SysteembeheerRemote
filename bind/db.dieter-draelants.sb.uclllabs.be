@@ -5,7 +5,7 @@ $ORIGIN dieter-draelants.sb.uclllabs.be.
 
 @	IN	CAA	1 issue "letsencrypt.org"
 @	IN	SOA	ns.dieter-draelants.sb.uclllabs.be. root.ns.dieter-draelants.sb.uclllabs.be. (
-			                                      2        ;Serial
+			                                      3        ;Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
@@ -46,3 +46,4 @@ www	IN	AAAA	2001:6a8:2880:a077::95
 
 
 ;@	IN	NS	localhost.
+subzonepb      IN      NS      ns.dieter-draelants.sb.uclllabs.be.
