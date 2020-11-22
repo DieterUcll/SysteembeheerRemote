@@ -27,12 +27,7 @@ root	ALL=(ALL:ALL) ALL
 
 # See sudoers(5) for more information on "#include" directives:
 
-#Self added lines
 check  ALL=NOPASSWD:/usr/lib/nagios/plugins/check_apt,/usr/sbin/arp
-check ALL=(ALL) NOPASSWD:PRINTING
-check ALL = NOPASSWD: /etc/scripts/dns_add_zone, /usr/local/bin/dns_add_zone
-check ALL = NOPASSWD: /etc/scripts/dns_add_record, /usr/local/bin/dns_add_record
-check ALL = NOPASSWD: /etc/scripts/http_add_vhost, /usr/local/bin/http_add_vhost
 
 
 
