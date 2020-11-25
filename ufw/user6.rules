@@ -23,6 +23,12 @@
 ### tuple ### allow tcp 465 ::/0 any ::/0 in
 -A ufw6-user-input -p tcp --dport 465 -j ACCEPT
 
+### tuple ### allow tcp 20 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 20 -j ACCEPT
+
+### tuple ### allow tcp 21 ::/0 any ::/0 in
+-A ufw6-user-input -p tcp --dport 21 -j ACCEPT
+
 ### END RULES ###
 
 ### LOGGING ###
