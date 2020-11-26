@@ -1,0 +1,504 @@
+; File written on Thu Nov 26 15:48:58 2020
+; dnssec_signzone version 9.16.1-Ubuntu
+dieter-draelants.sb.uclllabs.be. 300 IN	SOA ns.dieter-draelants.sb.uclllabs.be. root.ns.dieter-draelants.sb.uclllabs.be. (
+					33         ; serial
+					604800     ; refresh (1 week)
+					86400      ; retry (1 day)
+					2419200    ; expire (4 weeks)
+					86400      ; minimum (1 day)
+					)
+			300	RRSIG	SOA 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					E8urgIBwvtIfnfs44Ukf8ZYmMzf46AxFIKXp
+					HyqZXz3xA7m15PWblJUa/2wRTWTKE4UhNuY5
+					7IIp+wnrr8+V4V4uPXubCz+jJQUklg/ZYhUB
+					oOneU7t7vkFRvUJ7DI/ozELb27uyLlSv0ajc
+					NlVe7iCSpXHqMturs9ePKFN5GfWdmmuyz7q7
+					zHddsBBNNuD4MD5dufNkLKIc2Lo5h06anxiq
+					22d+yGq0vGjn61eIr2blDifIppIshTrXEpqL
+					qtWvFsGygE6+aOLDWhU0JFY/ncPn3lDu2r+X
+					f9XV4rPOCLCxnfRulxsLtFKs/qQjT70P0kzZ
+					tXzUxHKGOBxgHSQttA== )
+			300	NS	ns.dieter-draelants.sb.uclllabs.be.
+			300	NS	ns1.uclllabs.be.
+			300	NS	ns2.uclllabs.be.
+			300	RRSIG	NS 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					UIVrM8DftW04eG0vczTb65tPqhfRwLLsvbL9
+					I4CzZ+A3QQhAzUIg4Wat7KEBj/fPw6E4qH+n
+					4blTcmw5q6PKdAvwKmuIGMJNfoKB/iE51YbR
+					xSMWILAhExBvOs4SX3LZKpAAtEu8Waf1yDGU
+					vVAitY8nOTEd2Dhbul0N8SbmOm2YY0EA6dGd
+					fWp6fA69PiHw2Jh35SljRpdoH3TrN7ot7uIF
+					e2RFX2DCsSoegCSMyzFl/JxxyKyJHHtzpa/H
+					Mb6VniqJjKzTfs4+SOTJkb+z20oa/ebEFrjT
+					rWQ2+dvpTjhGuku8UOgtdJGjrYF4z8uT041S
+					QNNABiWnR3DcDax3VA== )
+			300	A	193.191.177.149
+			300	RRSIG	A 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					lbkpRKFPuD3FXE07KVjIQDnCYdO+eRGtprfd
+					KOkc+Jao5M68HSDFPxMVPrXx6NlxG44sKttj
+					ma6ms2G4UJGb+XTTivIhhOgoRvlPNXue74N9
+					GK9ErgJdV6w42ukpWH1oq+h4Uq7WwaIkrTCn
+					GMmTfYfrt807vQ1yJHNDdclYafYdovz2uINN
+					dlRqNPvCgM11sjS1HYZW/HLuBjW0Cb8wSWeB
+					tUDM22nwYwUpYbs2Np8OiBj6u2Sw3BKxVXve
+					0gCRHPXQHbkH7DR05s5ZAEF/chFHOTuQ0GMf
+					Ql35WdbdGe4WSmbyyMxcwMKalk0f+y0ljWcO
+					m9KTbbQ/2K16PWq82Q== )
+			300	MX	10 mx.dieter-draelants.sb.uclllabs.be.
+			300	RRSIG	MX 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					F558hIxHedJ1ao6A0A2fRrCxfJQtEQmYWd60
+					+hxHccnhUBF6AClFoX43W2BnGvOR91u+Lptq
+					hvVH4yG5YLW2rNkAN+7MCv8B+Wmyh4v8o7h3
+					jkh7QJLiCki7ps+d4MOiVCUsLXyeo9biQYT1
+					s8A7qFyEmDrAiQFcEayXGDTcaN4Je7+51kY7
+					jHwOcJySRwV+HM+juxqhpeySmoGX82+x/aTL
+					tPFfLsab3Y/52IGq31EPbC9QCqVbXz3hvx5r
+					DL3mqJdffcvn6N5ZhDBeXXpd/2AjZ+Puv7Zv
+					8LTiayc6I9TsouXujJUMBiDAXPt6FxkZ9o9W
+					dCHfK2TRBz3sqnj2Zw== )
+			300	AAAA	2001:6a8:2880:a077::95
+			300	RRSIG	AAAA 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					k3ogfsU+GnpC9BCSPkjYrwFiPDTWzlW56I81
+					VcrALsRLQ6EMkIeLOScK2fIIryemZzX15kEO
+					rYNAYv98gHnzTMYsG0j8+N1Tk+leHJzvLTiO
+					VgifmhxNXDgowWjCMp43GQUnQSsuKcc3IK7q
+					wtgKVGb/h8wYAXzZcmXM7CDYT9i5OQVobBm9
+					D0r1HAs3yduwT7XFhNzOZID3xM7OchnmTEvI
+					HWVhtKSTJIWbA67QWPHHDMlQnagDYGmgh8mF
+					S3BPm5abyJmfJbiLcJLSULxU2w5+9Z6Y0/h4
+					PPiJa36sN256pkGRfSjD0STHql0f3MaZWtAX
+					pOnAEbJ2RXHJZYUuuQ== )
+			300	DNSKEY	256 3 7 (
+					AwEAAcTEzt33DNc5oiRq1rOjK15I93qz2Tpv
+					LiEsPNFOzsZYy6ul7H+gjm0qmXiUflo13fA2
+					0MqbFrrIOC2ESEmWE3afcsKREwkQ8YByqMvK
+					FyHSxzqaKT/gzeAND273pJxOjgTzXsOhgIVj
+					NOMnMOokzx+SB5q1ogTPMQXKbBmtN0FcU++y
+					VSR/LacVNbrY3SJivFQyc8HUzkUmHU9PU3+K
+					DhHUccpWwiQ3HnIXhxDI1PC+ej0rjkakU0c+
+					67DX47qIm5yMu0ewC2laNd8OBi4T2tS1dACA
+					Wmk7gJVNANs2AwMWRLuFJmudoP6pJ1u9wDsR
+					VtVYle7MU2jHzSjvBAwfh+0=
+					) ; ZSK; alg = NSEC3RSASHA1 ; key id = 38210
+			300	DNSKEY	257 3 7 (
+					AwEAAaizVM24xxjAqZm7PSZxd/fbLR9lUJQv
+					CKjfhjjhO0BCqSduOKlzvW7ltCq2Ph3MAYZU
+					BjACftwDKJhMgCY95VLwwejqSyVGPp2b0DKf
+					qj6TDm1twQ0e+IKtizxR6oB3bmDXJb0hK1l2
+					TfqCiiXi8N6HqlECG9q6e9dL/Ih3aGaavtfY
+					vLHa+2lLC/FKyXeIxDJUt2nSliuTT1aZm4xM
+					AJra3qzLeJIP6WxPMGeMw5AYRrCo9PJRYodj
+					78IKSJaemfvLfTU2FN4K49I6APGuW9NlOZU9
+					gMczeJ54BuC+EBWjDCB6ZDfoGhtNjm/12ira
+					GNKsdXOMOs7P4IBhzT0QaW2awb6d1ARQcx0w
+					DKiE5fzVGG7OGCYVYfuBt+Q56VQCJAHFl6x/
+					uGTBF/JyUGUy/GIRWGMlKdZ0dygXXWIqrkV6
+					C6PxAOKjkJhC9CNahT/+4yHIXZfuZWNwXVMD
+					b35MsIGHJ3WAVKyjZB0aklnX6BIHyYbl8qtI
+					Y2c1dGLTV6EbYVJ04kJt6+174UvVI/mwZ+WQ
+					Y1gepinlUBmuuZP2IxKybggPkhgl0Gs0PZQP
+					VaqPzXWSLKPCZAnl3EQrwcocezdFXz/A5rbo
+					4+WErXiZw7n5me9IGZXm/zy7WduneSQCKtAa
+					tLzJV8FkOQ4oCwCcKPovWtR6P1jmie1RRc6N
+					rE4L
+					) ; KSK; alg = NSEC3RSASHA1 ; key id = 1981
+			300	RRSIG	DNSKEY 7 4 300 (
+					20201226134858 20201126134858 1981 dieter-draelants.sb.uclllabs.be.
+					QdxgURTGMbG5ZXehiXq2T/vqBqwxczPkAM3I
+					rN0LwDGr2qznenr46BAmNDhPKyceeWgh0uul
+					Fdr1psh0EvlUEdjNjCAkWcuGFqTO33j3q9+0
+					aqcoG7WZue2yJyFc/kCTH4QSSK2gdbX5vt49
+					cf3onxftCxU0AhFRyiVNO6+xcCmp23EgF5jb
+					kk6gKEduJe/kHOAsxBk2rfb4H9HTAD5zM0+8
+					VHapvdUAHf4ctlsfqK2DvXt4OhyeIWVWVPDk
+					2Eqj8gu/BBlTvwRKdnpTvyPWv0LqauGKQmCs
+					RpPxqfR1iR8anDVB9No6XaVn2yIWVizjDxzb
+					gmeUXSIzo3sG6vK4r32tD8Cao2gbJXJ5O//o
+					+qODVJde1el0gN3DVuBMaoE71rucAowRkA0x
+					KEYocaOhWLN3R+hRiKeceCANORaEuBQqAEX8
+					yJEJ1q4etxUdXJ08ocD+V0c4YUFsJtB4eLg7
+					xeziYEtiOJ5VcHtsjHCGgtOwxgG4CNgSHkxs
+					qmwMyZdtu/4B/6F1myW9W/f+p8mflCge214t
+					lt9/9YTRuMF5tNYm6B1YknCAcSNpjsu0UIwK
+					wYhe8jGFMWehO8yvwiFztbYV0zPJtQiGBl6s
+					ojo8E6WbX99opd4UsmCTwfavkZaN5HTVM7JZ
+					xO+SdNFrZhwXwGY8uvTCcZTDVttHyZZBkNg= )
+			300	RRSIG	DNSKEY 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					FtW6i+Mhukmqpun/0OJ9Y68c91HS/DHcEJwO
+					hsu3A37+UL++JnT5w9jMG4JWXWIuHELkdsN+
+					UREp0HIl71YpLPyzm8ybUmJ7vEabGJkZxtZ3
+					yfJbRkOf+tYk41HuvaQeBIBppTivLAcAQfB1
+					UcW2dWtHwmFUnMslCgWGwpuuoBHADlorNrsl
+					aY4MY0bq5IWJC6rBQiLAsYkEiXvnaL9JQO9q
+					w3/vqKOjKQsBXNnQI2yNwBjhJoxanptjEyiP
+					JQXGZGvG32rGdR2jBUiEe4+y0wJypOrygZDD
+					Wq5jXqVg5jU1j0N65Yqbuh/TE/5lNGPO4b/E
+					YOONndYND34FQ3nvtg== )
+			0	NSEC3PARAM 1 0 10 6D7DCC8C558BB102
+			0	RRSIG	NSEC3PARAM 7 4 0 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					WpYJkW/Skv73kEuJBgGFm5CW1pljj0jZI+io
+					ghhcldki87B/3aUTo3ZWjFUhEqvxy5vjXMUr
+					gykHp+fQafsIJa5BqdL+qNx1ex+IbZZGPw8/
+					6Qtdq086+vl/vidKDV2NMaXXcJYVPpHvLaWN
+					roVYqJmK/FOl5LynBSTs9wxPppwcnLwEbVjd
+					xbcoFDaD4re4/9pC6Efmm04wSJlth5gLy40N
+					1uQV7denBY64vCwt2ZbSHhDbBTgA9FBn2Zxl
+					rQhJUgiGct9Vk6VGtthjQeaQrwLweLTXoWEU
+					9Xvrzv10KiEh6Y0fItzGf5muXgyzwlYbOdAG
+					mWMg6sets6lXOBpD+g== )
+			300	CAA	1 issue "letsencrypt.org"
+			300	RRSIG	CAA 7 4 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					TKK9WJmo2GMD9bBTL5BAydu8hL4I0dv6mRAm
+					N3XeNGXnLk0uzl2rTw20HdarWMeMV/4zWb+8
+					K7NdBVH+FWAIX8rwNaxSSg1xSXLtimQvp3hS
+					fLRbIoC5Q/G1N6+N2Bt5gY/mh4mTXjIbpIGH
+					FkHxbMDrv/FpRXQuWGRVIlRCPf8oEH3PQclx
+					EFn9cO0g4s0n+e3OyvV9lvCe0ndEAA6YhhhI
+					HMOfdCcRnuEPdEPHrP019W1aDjNEecthkdrK
+					Ao8vO04BE11bI1DK3asiC6k0x6FabSHXiWYy
+					mMtUX/DFPkBn3fhwgO5xXLyM3QpT4EiCaolx
+					vDiil+7gf0B/4tk7ag== )
+mx.dieter-draelants.sb.uclllabs.be. 300	IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					WW5LKVXesyN0apBmkbJi1/nYghmELPvXVHxt
+					5RkCyVqIOyJVrh5fKLd4DjyfXA4bQftvS1tI
+					P9Dw/yIPr/HKeqGtR3svLkxzrNehIJCxHs4M
+					LUKNOm9XZ6DG2H830oyiBQmlCe1vM6KZkT1G
+					JAEw42/YojE+bqMtLB5IiNEQcRaaDYvR8X3h
+					UVuMytsjJIkPr6X/24ztmQJoihSeJZf0fK8s
+					b9+S0JG3VPCknu5V/CamQjyDPL2cCo3GZXAC
+					lTP4lxh0TEd16DOT2WoQNkY3x0PCW++SwyQD
+					0/0gNidVVUzgaXRwHu8k+63N3UFFHKIDUJH/
+					g56UW3kHRc9GN9HZnA== )
+			300	AAAA	2001:6a8:2880:a077::95
+			300	RRSIG	AAAA 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					rW+V3aW80keevcoTWVqmP60BjsAI9MxVRK6e
+					0FNk9jabvvwADUpVZ3nxFmpGTICRo17E1pFo
+					J5u+SkSVVO3d3+o7oQpGsb6HOLgdTG8GQ+uL
+					LLt1p9OkGqXKepUaNZhEptxPs/oWuGgPT+oW
+					XJYrSgZ+3hqLj/Z03U7MdYuTOe2fkRYDTOI4
+					70PJQa4A4rmSI2w4qzgXIhD22AyMSo5p4nJj
+					fkRihseZy/PHoqGWJ/H3+FI599P7ObNfJAb1
+					kFxXzAsWYMXHUtNg7a+ctYF2U7HTCgHZFkKd
+					b6l33Gfp0MP+BemTXao68BhRWBwESiYN3aSu
+					jBxT2aAxHjMuYfvtrQ== )
+ns.dieter-draelants.sb.uclllabs.be. 300	IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					uAG5rV24bplNbU/Pp4ieLuT/a4AIq5aQTQu5
+					1L/ZHJ7TY5fqnGmm9eIpbWvhi0txNsXv0OhF
+					mlgaFbl12xihcSY+nibGCgLTos+O/NTCCgEP
+					X4k5bF8JupdEoIMekWhfDQn0fTAvPfX8Xnuv
+					zz+6j6N8u5npa/67YBOjazX7ZFTuSLbcE15t
+					wF3UWwMOyBxqaa11CaebQrMrO4KcOUEgP+wM
+					vzNB1MOluEHr6K8Bz788adtGI8cclKErIadR
+					odOml/8PYdOvS9IX5q5S05ccf3hPBRm+DGXB
+					4DyLjUCVZZjNo0vHHq/EVYF7O6LipVk+6QYW
+					AL132dk2blMTLd0YKA== )
+			300	AAAA	2001:6a8:2880:a077::95
+			300	RRSIG	AAAA 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					vh4roWu7xl4262PuxV6VTLTyZcP8scux4sKL
+					4sjnURRiqREWhUi5kZC0wf+IQxj/qaRD/TkZ
+					kUqlPFYOJzjn36BqVxJm2fOXR915NgL42Kb2
+					UmF8uUZofEX3mlAdENCJDDNTlJNLvBR7tg4I
+					hvmOGzA3vAcMMPpRYWO56rH9G5k1+JgyWBYZ
+					KyKdqqrgccwidxUqsIRvS1gIzMf+OksxqsgH
+					ZxVjzZi9+Q9oD92f5NmTHvpfV+ZhsjDxlr4T
+					jPlpdxvs6B7viiTkv0v0uXgzoXo0LoOYaI/e
+					eQ+B5zlr0xhyqfxWzX1EMVbZL0XhX9MIlFWo
+					yp5pqdXl1NwrkPnBqw== )
+ns1.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.254
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					s8SAQErK7WgIOsgoGBE4UX3ahG9bWXDrphUf
+					ffG1G0qpepAjDqZA+xo+tE/Aupj3BHQdHNwJ
+					TeAN+xtP+e+yOPxyZ4Pw3mryhjsJN0W3YiiW
+					/rQU0AnTcNgfXkTxVxuLNiZk3FYqZa/Ef+tu
+					sTTR9YySoe8QvBtwztWcThl2l3C5bR0T2W9/
+					KuEGutAZ1is/tbJ8aIbZ9oPou+HHGTyp2aTn
+					kdlOQ7nTMh+UyzQIHLabhXkeo8TKjF4KoCRX
+					hbO9sot7XSXS0eLyaCDDXc7dt9FG+7sciQUV
+					8ZCzv1RGp7KcP9OOjoMNknnbM2d9OVSpKyPE
+					GW0HXvulwQpFDYLaQw== )
+ns2.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.4
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					Is3+Ht4UKwsjmRS9FpgTT4doRV0fuxx4hikn
+					6DcDBbIWytRrXYyZu37VSXQ0az4iD7SF65mJ
+					zv+xfK/7i/Bi5k5+LHrrWWI08n2dyzd94PjD
+					vLJdZR9fsrG0k5XpDtcIIjLecJhKHOYfXDaU
+					P3dJscmcA1oUGdktF6Cd8zcZfPWGRMvpyCSW
+					3OXC9cYNVPfmwzu3+61y9whkNgKe6xG3zpIv
+					pgb4JXU6H/gL5y86F67fAbURhYlsotd9FXsq
+					JzIXDNPkz06M1QPk4nCsMT/LNBcdpBhCqB7w
+					Juob61SP0R9Paq+mF34LOz5Q2Ysak6YBsN2M
+					MfumUDm9A7hlZa3Utw== )
+secure.dieter-draelants.sb.uclllabs.be.	300 IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					BoIoacrNV1/rAEafq3YQOwLCPAl35MkjbUVX
+					tIkjkzQ035hR1BOww/C3lAkdh2N5do5193s3
+					zoVw8hPF1mxD71gUfATNt9bEaqhTGqrJjgHk
+					VuitNRT8581fEKZjdfRkU/7la9NlH0wng4pn
+					MA1ASV8RZdItEwtLDgDL8NWer4gIhMOBX7Km
+					96FirBCN6vvvOE05c4NUJPcR5MJvNi6HUCQK
+					UhKOVb+03odjIkKLyZExMDxufp4ktPzSIpC5
+					AuqHExqtbAXTJRigAvkzIksqmW5TT6Dak+g+
+					OllX3vODsRXObpb6fFHqAt+6BusOZfoxTFz7
+					5RoAmQ09rCYVpw6OYw== )
+subzoneaik2ee.dieter-draelants.sb.uclllabs.be. 300 IN NS ns.dieter-draelants.sb.uclllabs.be.
+supersecure.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					q28ftVF2IzoopDtv672CRoXrJhTniUD5qEZp
+					vZufflze8Lu8dqxoOLDkoz0lQSnO0hWdBhXa
+					RlbtFHX6nBKVRY/c6CCJyzUNAn5/9JL2k14J
+					jzfgOhQMKmawNCTCUjKt+0j3uO228IF3GDoJ
+					NC+H91ugunu1pNkP+PAXf+hG0GDwXV+00e3h
+					wStxZeDWaGjWqTXZ9cQ6AeSrOSdiQPcV9sS8
+					wajACaUOlwOvJdApPhxZxp4itcrncfYxTEKH
+					vQy6I4ab6ttiXbfZm1cqZpXcXVsx5e7GJQJM
+					JqRxI2CmNLd6UzkeF497JBBirW8N3/hf/ERV
+					AJN9ktwY47ow6baQSg== )
+test.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.254
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					KgYNbHOq+bBz/mosS6yyIjSP7D5KFxgPHyoN
+					yJgApSJBNySWo9MqOOHvuOUIZRP4ekapquL6
+					h6es8g5da6gAX9WHfeHB/3QXH3yTVZT2zWn7
+					oVzHAfp6TrRSYE0bXvnrbM4tBF+1koUlL9St
+					y+rKy5cf9Q5K9QK6ytD/Z/REITEzd1gPlzti
+					ESkXkTxMz7hsxlmSue9i+JFr4NmhYAADAaoj
+					Nc9LjQ1nFAMSvUNE02LgVVluamVNXbXOkcU6
+					1ptc8rxfGWRYntik9wiGl5x2LzolRx79HRB2
+					3IhJWVM47UqXekOVRQlmF1g4SJXkvFBidpN7
+					fjnZ8ld2yWDFMmXr/A== )
+www.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					U+GqONFw/RV6Fdw7ROXJlSXsVP5fB+pTRa74
+					ZTu6s4BrwIwGVWUApgbZRypoRbFdAb6ZFPW3
+					2CSVbvhEuuK5el5vvnxXzF2fSXqmr02iw8/I
+					EdOUrGK4LXK+ubygnKijTystuOPptWZSv+Jd
+					rlhcGveM+zqEnQM5jeYezbR6I4WPyqfRJ1aC
+					vGPOii8C2J6YQO0sWGCMkTB/RmCQ6gBzT+9Y
+					aWqURkH45FKDv58paKxAXx+ZmxHvaoLeZ7tF
+					ioTRfMZyVucgiZAnjMpFNa0e+z5HaM2Y5WVl
+					inxI4oq8nNCjmwijUBy0BM+Hj82sWxX9pwm/
+					FgSvkk23cYX/wlQEWg== )
+			300	AAAA	2001:6a8:2880:a077::95
+			300	RRSIG	AAAA 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					jiUddQ8bq0m2J3C7f8+HJBN1bOBFCMEhulyb
+					qWPHRURJAmQayvobH5bBi1ygBt0azq7loePz
+					Fu1Cdbz8pYxxoN3H0rUR+HjiJY4jQ2sAthv1
+					DWbQrVxO9amMc+CO3ogrtRe5NGuCdijwsAXd
+					E3bsDPL6vZgDm/sitaG7zcecy+BYbh9NaKAZ
+					pTYGehpBOyZa9O2vtdZzU3OUEgvkr5vVzPf9
+					NLofRe+QujDgKuoAMMn/VPeqCkujU7H/fQVa
+					QNNiBhP21N2hPU6RodPswSs5UkeRiof0BTFq
+					BXx5wWlA/Lqk1PzAC8OSqaOnSJEVuCp7zbDD
+					1F3WHFpIvsGKGjtoAw== )
+www1.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					BYR+mP3+sdG3T2cT1gjY1Kze2rapzxcnNHln
+					BQo+sBuGIp+3omPoCqlXYwRmj9t4Ir+HsNyc
+					VnSIQ1iKfXG61ScyJu62ReMEs1H94mgdLf7X
+					oDaiMrgePUCgMEH5lKAHoEfRTq4soVkv6+g9
+					6lol4CJppVjUbFgvFX4osoTD2eXo5ok1W5l9
+					p5gOVPq0nEiydqko0ffsbSfKmN4OaRTMJgdQ
+					bgyDPKkm0Xmfm+qdMQTIUCCMuCr/mebxgFIS
+					DyVNasCDQCW5iY+tXQBCH1MoTndM7afq6KKM
+					2w0scM4Y5BwHnomqy4GK/CNjMaqpHogiHtQy
+					5s21tcDTCBN9/IbxQA== )
+17BBPBPJNKN2VPFJ58UE7S269OHQIAK9.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					5EJ35DALQ26FCSCKR63BO4T91QQ14VDB
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					L2L/wku3B4fO9hJhR5Inb/Orhr6sTUMoTb8a
+					yIuuWyilrOZ0cK+s1yES3jtPn7YdbqC/i3m+
+					5KfzJSOL0nHrpuWr+NYyqcQn/ckN0LnedQJI
+					OnG1ht1Pu8a5SLdLrX+TLMghHnfJgOge2owb
+					fFVqBKblDsZ/8N+YQNYhz7tmFoLREO0J1oeR
+					cfH2ag8f8PVrU/qEFrM8sjIRLVKXbfXWHvSj
+					cKF97gLhho82Ct32U7g8An3ZhtyieRjY7hk4
+					RTpE8WkDBendxk7fixeI0WlCPA1ia+wL0vOP
+					CsTwS+VM307lZhMFqoat92tzHSZxATOHNVX7
+					yZpBHalrhmJlE3xM7Q== )
+5EJ35DALQ26FCSCKR63BO4T91QQ14VDB.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					6QT4DQ4JHR5393ORT8C2LLNVFRBF97PC
+					A AAAA RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					tdO+MLAQq67fOmN/zklTZOctH5a9UTkMeQi4
+					NhL9NVocnQzIG6s7Zbp0gIwJGNs5FFld7Pdo
+					XvB6vHdckwif4PetDokH/23krMQpI6lmZMXx
+					sJHMDC4iYDiU6E7SeYsbPXv9+bMHEVcNCL9A
+					VUjaDSmQQgd3pkKKdGPfEpN4/7P13D8FtRBj
+					xQoPm4jud93Qd2nj0Do+u0toYQWedGgklMpk
+					NmvNlijMD2QnHYn7/YPOr2pdtE3C3KRmfa2F
+					nKtNFefZ2mxksKRmN6ZfyUCefduWE1ozOWVa
+					6QMWrhko3G9dpwYaBtnQxwOA8q6ku3e8UMeE
+					8MhUuSxAUTLJiJ9uOg== )
+6QT4DQ4JHR5393ORT8C2LLNVFRBF97PC.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					6VGLM04AVJKILTGNP3PNRUEEIJHF36PU
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					uMI6CBhdXEydoluPj8goZSTT5V6ieRTcjkQV
+					YFFhCcgaSP8BkxbBeWIFvz4XEcNkjWnGDoRo
+					b1Yhd2TXBjDJBtIoVm2WKiMphJpKYHTTng3P
+					WysfJSBLJZ+6V3Vf5mlxgChpWVDsam1S7b6O
+					f3LM22ij5V33xG8thjHTxfYRy7iBFtQpxlWJ
+					z59ZyOXjAqTYLPEm8N7E32A/5EdtR9VyaF+c
+					Syq+3i4ydo1Re+5M1tYGTb1qxJmAMHiw5tQc
+					JPdfupZquPLKL7106eJ2Jn2o9tCtNt30ih12
+					QrvNCjcnuCJOz2nf7eBA7UjS7uWkYw1DNiMi
+					FKxz8n5DCpQ0j3ncHw== )
+6VGLM04AVJKILTGNP3PNRUEEIJHF36PU.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					98I5HUMK7B327KQLRI4EPM4IL6L30L97
+					A NS SOA MX AAAA RRSIG DNSKEY NSEC3PARAM
+					CAA )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					hWdSUWXcRt/1qlRjROC3aT41W66DpBjoUV2N
+					iTBrrOkvb5CT+xuK0nsAn+5jh7ofTL9fLvjT
+					F6uwfQQfyqhw2IWMF5gXlAdweKgjkdzKWnCH
+					LMGaVdMYQb2Amxd82kKAbPa1UTg3ys1q7Zob
+					eDC2yJ0pOFZF+WXy/niHsNa+cB0eoGJ4Hm9F
+					nYcCz5lrGptp3LA2kqkKKI1Up76rJQ/s/txo
+					duhQYKCWSUKpgv3mpf/dCJdYtw+PztwVHvGP
+					qfk3XRVJHTpR0sBRWFHhftAnYYjJg1eMHFLN
+					6beceebYPOq8mpyvP2Nex9RpJzkQlNb9FodP
+					X0wsXPcsevrt1we8Lg== )
+98I5HUMK7B327KQLRI4EPM4IL6L30L97.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					9GUFTQSNP34N7788R23JO8MEUGPDBAFU
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					AF/H08URjA0sEMn2GYQf0DhidWeQH+7y7DP2
+					F7ppC8mqaLpoSvr8gFp9e/016hcHz2RNm3xo
+					dHdy2bAW1GWI+qSNUqtLT/3svMmsHkWcmeO5
+					SumWvJVKCjDh0+cu/qQ/uamZHJ4hsjTMDhPt
+					MP66eDHFJZ+5ts7hWMON6/oc+tsfRKaaJzme
+					V1/Xsx4JAK2xet1VYqMTWfw9YlFjYY+K14ev
+					PTGjw/npCfkHmkcqQlzkm52DjBDekK7tyXkT
+					7e/kDsKBkKHufrD/ahGQLK5gjFUxbnNLEWjW
+					FQoE8kpEEumxhhhFpeBKFopVz/bAMzUQlaCs
+					euJYe9q66jsWLfzhmA== )
+9GUFTQSNP34N7788R23JO8MEUGPDBAFU.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					E0KU100433QOCCJDEGMRMJNAHHPSFS9P
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					KPt184cVBItcd8HaXLqpiJxv2wPDj/k0ROVx
+					jDyHXv1UoiUjfpgvETGbHDORk7JVgMc7FhVq
+					AOYOuOh54j8ZhPSenJwwVrAlQG1gDKa83m/j
+					uiWwAQhtcff0QVmbJ0vH6DPRbtRHO9cfrEYL
+					BTRxytoSyDRo+ZG4kV2a4Tx5oN+Kr9nd+/lC
+					Y8caRKeWDxbbz81Zl4ZhgFswv/Be02rcC4fR
+					V30Y1mi8ls5hzLSXrH2swrAHts4E5KyBPJKT
+					YaaVOT+rJLv5goZgQOHRHZY+THnBbeDTUY2Z
+					/3A0jM4+LPfeH83MWrIDE3gfqqrtGGYeAiix
+					ZcEs6gaI+Odrs/+LHg== )
+E0KU100433QOCCJDEGMRMJNAHHPSFS9P.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					FDGH6KIOOC4SL5MQJ5SLR00EB4UCATL3
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					X94foG+tKiMRMYEXFDJwKLD0rGSY3eAqp+pJ
+					UMeIXbrtBOsl6YmMBa9Gdbc1EB3gxuh3n5jJ
+					shnUXiLWYxuQ5PwsfQK8qAb+nydOgxmQNPJ3
+					ofkREaUUZRBs60gtEg4+DxLl177bMczmJj83
+					G7b0IzhPZmcdFbJ5ULaXH6JXyeKchZuNsnVp
+					O3cKsh3ylX6aWbrHEc1F/fRyUUJmMbSqciTU
+					4MXqKantbGlKYdATvefNRz2EgKmdpizoelmM
+					aKtl88zApSnp8MgBSycDEXWbhI6O4V7e5BTP
+					6/UUOZaGivwJj9h70+oQWIAN6IGAiIDRTdg8
+					NGXQd9+Y7uZ5p4pArg== )
+FDGH6KIOOC4SL5MQJ5SLR00EB4UCATL3.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					JE5JCGM9KT463LCEEN4CR4ULA0JV3QFV
+					A AAAA RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					dIL0Y3+ZQC7sVyNjxVUIV//xu5Vzc+HGoFib
+					xR+7t36mJ37WtPOv3bdFAgE0CeJmgmNUsmce
+					tFWXpPgq+ir/UwdwV8xgc4lcUKBbW8oiFugR
+					lZTyensg03Yu3j/Cdwcl3RKjLsdy6Uqq/uUp
+					50QcOR6cwpJI5ghEA3QB5z/3n1/Miv3k5tMK
+					fkHSBKtC4yxH66mX+unHitynZn51i/ZMToP3
+					qU8JPVoC3Y4OLWfyJjJdJ8SzmqtxVerrRlFd
+					PIl608pZa91d0D516WwubYh5menry6Va99Tl
+					+zFxlSeqqJGVQQO5Eaxb7cACd0lxd8lIW8jL
+					OBRB03SBrFQqbY2/YQ== )
+JE5JCGM9KT463LCEEN4CR4ULA0JV3QFV.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					L19899NRLU40A6B6GB921T08A2T9V389
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					edI+4qJZSYBxmBJxrveYdEmHo2r1OOF1Z5JA
+					Alj/7nf5kX9zWtn6rnJiHtDJnaJ6Z7pfF5Z+
+					w/AnIpSHOmo6aaMrYj7J3EPbNvzX0F8xbvCA
+					r1ZwghoDKuv0lUiN5VCZxHF73tILESc/yf4n
+					TAwseOLSQ4hpmcSt0QcdYyO3r1vOJ4q5XRgm
+					QpQONaUF6EocJRLdKas2XwTmJ4z6oUjdAZLu
+					SXnHZmgUdSqjLV6RgcYPgVACKcoUoz/V4JPI
+					l5FSMjxfSce6NW0UXI//vniRks2ewl6XKjlR
+					ba47J7dwYSXd5u8hOLHRMA9ORWkSySJ0wJfo
+					h8D1efAp5oz74rOHAg== )
+L19899NRLU40A6B6GB921T08A2T9V389.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					NMA0H97BIGBJHRVM7PO8PNHNSPQ23I5J
+					A RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					NrqYCuPl+763IViwZz81RFkuXFRDsl0B+VKg
+					/AtqHHboK6v/sol8xo/1GcI0QBWWo6GK3KWV
+					SIZ7Ilx550XpQuTShz7NPd97jgTceODOhARH
+					yXEyUEPR6M7/R2Z/mfYcuCUaBbkZ2leRdJU+
+					BqrgqiXbQojGNw/Mba6bKWjbFu55kZZTR8tZ
+					nTgy5Uc/Avn/HFeSaRUxF5kqtkc45qpmXXvp
+					JkeMXgdKtZxXD54ZaI8bt7w+SEP85HJpE4JQ
+					BZL54gqdOjnwgZkY/3V8vcY6O/oUXEE/U1R8
+					cw0jEcjDPBpg9EV9mLWSFNFMjALEOEDW9t3E
+					xQ6LnfQc739KtwG6BQ== )
+NMA0H97BIGBJHRVM7PO8PNHNSPQ23I5J.dieter-draelants.sb.uclllabs.be. 86400	IN NSEC3 1 1 10 6D7DCC8C558BB102 (
+					17BBPBPJNKN2VPFJ58UE7S269OHQIAK9
+					A AAAA RRSIG )
+			86400	RRSIG	NSEC3 7 5 86400 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					kgpc8LCHgIz/9Lnlb80bYBe1b1OAy1xWpksW
+					PGI2Wfu8NgZk/XF1SOpl2IB3ayewaB85qA0m
+					hT8y3rZkZcmO/8tPnSgff8roNFbLKtq7hXZH
+					eS/tzlPJ0q5DRkGfmtYMUYZN4M3F+5KmR/Vg
+					2onClWFZjD9eLa5jEBzQxqqwPIhn5pTd4kcG
+					vWjFFUf9WAffkgZiMnUNzkMXeTKajZRVhJvi
+					4Re65cVhp8K5ZASLOxLvvUH2D6dqbsC/xZXZ
+					yJZXACEQFHUp3jE6iVqw95vwI5ZAFD3KD7D5
+					ovsPTUyxvg6oZcWnmT+piCbYZ7Cwwpw7H8OX
+					RV+p0rHwC7J/2lYiSA== )
+www2.dieter-draelants.sb.uclllabs.be. 300 IN A 193.191.177.149
+			300	RRSIG	A 7 5 300 (
+					20201226134858 20201126134858 38210 dieter-draelants.sb.uclllabs.be.
+					m2FUNdmkdYytPzl8C6R32vF/3rmrNAdREZOa
+					A+5M93hpjjV7Facr3OSGARJ7D9/knJe79Vd1
+					H6rF5yTNKD2oQdFOF37JcBQkVbG6a7qFWHrF
+					6aVf+As2+7M3tdGeYfNHszbBbGNN/+BHa2gI
+					gi1HYO0bNu+LZlyGXpfu+AvJZLKPt5z3xXeJ
+					ydN+1CFfCJQzs2I4QvOrKIBRoWOdJzrrnEL/
+					6uJki6UpNx7QiSSyu+ozTUKUwiDu2ZzrWGkd
+					0JlF4jx4JIkLMi5qRW55vfhZpQtBn/yxxceW
+					zBBXtQnpVeuvgh8t4G3tS2+R+3oWWVMXHCLE
+					tUqR0RovZ0G3iZsS/g== )
