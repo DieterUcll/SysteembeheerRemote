@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to ntopng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/bootstrap-4.4.0-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">    <link href="/css/minified/ntopng.min.css" rel="stylesheet">
+    <link href="/css/minified/fontawesome-custom.min.css" rel="stylesheet">
+    <link href="/css/minified/tempusdominus.min.css" rel="stylesheet">
+    <link href="/css/minified/heatmap.min.css" rel="stylesheet">
+    <link href="/css/minified/rickshaw.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/dc.css" rel="stylesheet">
+    <link href="/selectpicker/css/bootstrap-select.min.css" rel="stylesheet">
+
+   <style>
+   .flag {
+      width: 16px;
+      height: 11px;
+      margin-top: -5px;
+      background:url(/img/flags.png) no-repeat
+   }
+   </style>
+    <link href="/css/flags.css" rel="stylesheet">
+    <link href="/css/pie-chart.css" rel="stylesheet">
+    <!-- http://kamisama.github.io/cal-heatmap/v2/ -->
+    <link href="/css/nv.d3.css" rel="stylesheet">
+    <link href="/css/custom_theme.css?1606748852" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery_bootstrap.min.js?1606748852"></script>
+    <script type="text/javascript" src="/popper-1.12.9/js/popper.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/bootstrap-4.4.0-dist/js/bootstrap.min.js?1606748852" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/deps.min.js?1606748852"></script>
+    <script type="text/javascript" src="/js/ntop.min.js?1606748852"></script>
+    <script type="text/javascript" src="/js/tempusdominus.min.js?1606748852"></script>
+    <script async type="text/javascript" src="/selectpicker/js/bootstrap-select.min.js?1606748852"></script>
+  </head>     <body class="body ">
+    <div class="container-narrow">
+
+
+
+ <style type="text/css">
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+   }
+
+      .form-signin {
+        max-width: 350px;
+        padding: 9px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+          -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+   }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+    </style>
+
+<div class="container">
+	 <form id="form_add_user" role="form" data-toggle="validator" class="form-signin" onsubmit="return makeUsernameLowercase();" action="/authorize.html" method="POST" accept-charset="UTF-8">
+	 <h2 class="form-signin-heading" style="font-weight: bold;">Welcome to ntopng</h2>
+  <div class="form-group has-feedback">
+      <input type="hidden" class="form-control" name="user">
+      <input type="text" class="form-control" name="_username" placeholder="Username (default admin)" required>
+      <input type="password" class="form-control" name="password" placeholder="Password (default admin)" pattern="^[\w\$\\!\/\(\)= \?\^\*@_\-\u0000-\u0019\u0021-\u00ff]{5,31}$" required>
+</div>
+	 <input type="hidden" class="form-control" name="referer" value="localhost:3000/">
+    <button class="btn btn-lg btn-primary btn-block" type="submit" >Login</button>
+  	<div class="row">
+
+      <div >&nbsp;</div>
+      <div class="col-lg-12"><small><center> <i class="fas fa-lock"></i> <A target="_blank" HREF="https://www.ntop.org/guides/ntopng/faq.html#cannot-login-into-the-gui">Unable to login?</A> <i class='fas fa-external-link-alt'></i> </center></small></div>
+      <div >&nbsp;</div>
+      <div class="col-lg-12"><small>
+      <p>If you find ntopng useful, please support us by making a small <A href="http://shop.ntop.org">donation</A>. Your funding will help to run and foster the development of this project. Thank you.          </p>
+
+      <p>&copy; 1998-20 - ntop.org<br> ntopng is released under <a href="http://www.gnu.org/copyleft/gpl.html">GPLv3</a>.</p>
+        </small><div id="unsupported-browser" style="display:none">
+        <b>Note</b>: <small>Your browser is not supported.<br>Please consider using a recent Firefox or Chrome.</small>
+       </div>
+      </div>
+    </div>
+  </form>
+
+<script>
+  $("input:text:visible:first").focus();
+  //$('#form_add_user').validator();
+
+  function makeUsernameLowercase() {
+    var target = $('#form_add_user input[name="user"]');
+    var origin = $('#form_add_user input[name="_username"]');
+    target.val(origin.val().toLowerCase());
+    origin.removeAttr("name");
+    return true;
+  }
+
+  function isIeBrowser() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0 || navigator.userAgent.match(/Trident.*rv\:11\./))
+      return true;
+
+    return false;
+  }
+
+  if(isIeBrowser())
+    $("#unsupported-browser").show();
+</script>
+
+</div> <!-- /container -->
+
+</body>
+</html>

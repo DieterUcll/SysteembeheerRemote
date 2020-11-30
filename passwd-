@@ -38,3 +38,9 @@ stunnel4:x:116:124::/var/run/stunnel4:/usr/sbin/nologin
 vmail:x:5000:5000::/var/mail:/bin/sh
 ftp:x:117:126:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
 mystery1_2014:x:5001:5001::/home/mystery1_2014:/bin/sh
+logstash:x:998:998:LogStash Service User:/usr/share/logstash:/usr/sbin/nologin
+n2n:x:997:997::/home/n2n:/bin/false
+cento:x:996:996::/home/cento:/bin/sh
+redis:x:118:127::/var/lib/redis:/usr/sbin/nologin
+n2disk:x:995:995::/home/n2disk:/bin/sh
+nprobe:x:994:994::/home/nprobe:/bin/sh

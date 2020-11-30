@@ -68,3 +68,9 @@ wireshark:x:125:
 ftp:x:126:
 mystery1_2014:x:5001:
 logstash:x:998:
+n2n:x:997:
+cento:x:996:
+redis:x:127:
+n2disk:x:995:ntopng
+nprobe:x:994:
+ntopng:x:993:
