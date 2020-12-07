@@ -18,7 +18,7 @@ voice:x:22:
 cdrom:x:24:
 floppy:x:25:
 tape:x:26:
-sudo:x:27:
+sudo:x:27:logstash
 audio:x:29:
 dip:x:30:
 www-data:x:33:
@@ -71,6 +71,6 @@ logstash:x:998:
 n2n:x:997:
 cento:x:996:
 redis:x:127:
-n2disk:x:995:
+n2disk:x:995:ntopng
 nprobe:x:994:
 ntopng:x:993:
